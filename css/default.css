@@ -25,6 +25,9 @@
 	a:hover {
 		text-decoration: none;
 	}
+	p {
+		margin: 1em 0;
+	}
 	ul {
 		margin: 1em 0;
 		padding-left: 1.5em;
@@ -44,10 +47,10 @@
 		font-size: 0;
 	}
 	section {
-		padding: 0 2em;
+		padding: 0 1em;
 	}
 	h2 {
-		margin: 2em -1em 1em;
+		margin: 2em -0.5em 1em;
 		padding: 0 0.5em;
 		border-bottom: 1px #ca4949 solid;
 		color: #ca4949;
