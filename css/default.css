@@ -11,9 +11,9 @@
 	}
 	body {
 		margin: 0 auto;
-		padding: 0 1em 6em;
+		padding: 0 1em 10em;
 		width: 456px;
-		line-height: 1.5;
+		line-height: 2;
 		color: #4e454a;
 		background: #f8f8f8;
 		font-size: 12px;
@@ -30,21 +30,18 @@
 		padding-left: 1.5em;
 	}
 	li {
-		margin: 0.5em 0;
 		list-style: square;
 	}
 	li ul {
 		margin: 0;
 	}
 	h1 {
-		margin: 4em 0;
-		font-size: 1em;
-	}
-	h1>img {
-		margin: 0 auto;
-		display: block;
-		width: 192px;
+		margin: 48px 0;
 		height: 192px;
+		color: #ca4949;
+		background: url("../img/a.png") center center / 192px 192px no-repeat;
+ 		font-family: "Times New Roman", serif;
+		font-size: 0;
 	}
 	section {
 		padding: 0 2em;
