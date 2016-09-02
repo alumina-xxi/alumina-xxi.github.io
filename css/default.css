@@ -10,15 +10,17 @@
 		overflow-y: scroll;
 	}
 	body {
-		padding: 0 2em;
+		margin: 0 auto;
+		padding: 0 1em 6em;
+		width: 456px;
 		line-height: 1.5;
 		color: #4e454a;
-		background: #f8f4d7;
+		background: #f8f8f8;
 		font-size: 12px;
 		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
 	}
 	a {
-		color: #e56e82;
+		color: #ca4949;
 	}
 	a:hover {
 		text-decoration: none;
@@ -49,17 +51,23 @@
 		list-style: square;
 	}
 	h1 {
-		margin: 1em 0;
-		color: #e56e82;
- 		font-family: "Times New Roman", serif;
-		font-size: 3em;
+		margin: 4em 0;
+		font-size: 1em;
+	}
+	h1>img {
+		margin: 0 auto;
+		display: block;
+		width: 192px;
+		height: 192px;
 	}
 	section {
-		padding: 0 1em;
+		padding: 0 2em;
 	}
 	h2 {
-		margin: 2em -0.5em 1em;
-		color: #e56e82;
+		margin: 2em -1em 1em;
+		padding: 0 0.5em;
+		border-bottom: 1px #ca4949 solid;
+		color: #ca4949;
  		font-family: "Times New Roman", serif;
 		font-size: 2em;
 	}
