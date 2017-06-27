@@ -7,6 +7,9 @@
 		border: 0;
 	}
 	html {
+		width: 960px;
+		min-height: 960px;
+		margin: 0 auto;
 		overflow-y: scroll;
 		background: url("../img/alumina_960.png") top center / 960px 960px fixed no-repeat;
 	}
