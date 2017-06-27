@@ -6,21 +6,11 @@
 		padding: 0;
 		border: 0;
 	}
-	html {
-		width: 960px;
-		min-height: 960px;
-		margin: 0 auto;
-		overflow-y: scroll;
-		background: url("../img/alumina_960.png") top center / 960px 960px fixed no-repeat;
-	}
 	body {
-		width: 912px;
 		margin: 0 auto;
-		padding: 0 2em 10em;
 		line-height: 2;
 		color: #4e454a;
 		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
-		font-size: 12px;
 	}
 	a {
 		color: #ca4949;
@@ -41,6 +31,25 @@
 	li ul {
 		margin: 0;
 	}
+	h2 {
+		padding: 0 0.5em;
+		color: #ca4949;
+ 		font-family: "Times New Roman", serif;
+		font-size: 2em;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	html {
+		background: url("../img/alumina_960.png") top center / 960px 960px fixed no-repeat;
+	}
+	body {
+		width: 912px;
+		padding: 0 2em 10em;
+		font-size: 12px;
+	}
 	h1 {
 		margin: 1em 24px;
 		color: #ca4949;
@@ -57,10 +66,32 @@
 	}
 	h2 {
 		margin: 0 -0.5em;
-		padding: 0 0.5em;
-		color: #ca4949;
- 		font-family: "Times New Roman", serif;
-		font-size: 2em;
+	}
+
+}
+
+@media screen and (max-width: 959px) {
+
+	body {
+		width: 640px;
+		padding: 3em 0 6em;
+		font-size: 16px;
+	}
+	h1 {
+		width: 640px;
+		height: 640px;
+		margin: 0 auto;
+		background: url("../img/alumina_640.png") center center / 640px 640px no-repeat;
+		font-size: 0;
+	}
+	section {
+		width: 480px;
+		margin: 3em auto;
+		padding: 0 1em;
+	}
+	h2 {
+		margin: 1em -0.5em 1em;
+		border-bottom: 1px #ca4949 solid;
 	}
 
 }
