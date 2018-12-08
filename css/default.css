@@ -23,7 +23,7 @@
 	}
 	ul {
 		margin: 0 0 1em;
-		padding-left: 1.5em;
+		padding-left: 2em;
 	}
 	li {
 		list-style: square;
@@ -37,18 +37,26 @@
  		font-family: "Times New Roman", serif;
 		font-size: 2em;
 	}
+	h2::before {
+		content: "#";
+	}
 
 }
 
 @media screen and (min-width: 960px) {
 
 	html {
+		margin: 0 auto;
+		width: 960px;
 		background: url("../img/alumina_960.png") top center / 960px 960px fixed no-repeat;
 	}
 	body {
-		width: 912px;
-		padding: 0 2em 10em;
+		width: 432px;
+		margin: 0;
+		padding: 1em 2em 10em;
 		font-size: 12px;
+		background: rgba(255,255,255,0.9);
+/*		box-shadow: 3px 0 3px 3px rgba(255,255,255,0.9);*/
 	}
 	h1 {
 		margin: 1em 24px;
@@ -60,9 +68,6 @@
 		width: 432px;
 		margin: 3em 0;
 		padding: 1em 2em;
-		border-radius: 8px;
-		background: rgba(255,255,255,0.9);
-		box-shadow: 0 0 3px 3px rgba(255,255,255,0.9);
 	}
 	h2 {
 		margin: 0 -0.5em;
