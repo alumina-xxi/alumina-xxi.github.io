@@ -1,6 +1,9 @@
 @charset "utf-8";
 @media screen {
 
+	:root {
+		--color-accent: #ca4949;
+	}
 	* {
 		margin: 0;
 		padding: 0;
@@ -8,95 +11,73 @@
 	}
 	body {
 		margin: 0 auto;
+		padding: 0 3em 3em;
+		width: calc(960px - 6em);
 		line-height: 2;
+		background-color: #fcfcfc;
 		color: #4e454a;
-		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, YuGothic, Meiryo, sans-serif;
+		font-size: 100%;
 	}
-	a {
-		color: #ca4949;
+	body>section {
+		margin: 0 0 3em;
+		padding: 0 1.5em;
 	}
-	a:hover {
-		text-decoration: none;
-	}
-	p {
-		margin: 0 0 1em;
-	}
-	ul {
-		margin: 0 0 1em;
-		padding-left: 2em;
-	}
-	li {
-		list-style: square;
-	}
-	li ul {
-		margin: 0;
-	}
-	h2 {
-		padding: 0 0.5em;
-		color: #ca4949;
- 		font-family: "Times New Roman", serif;
-		font-size: 2em;
-	}
-	h2::before {
-		content: "#";
-	}
-
-}
-
-@media screen and (min-width: 960px) {
-
-	html {
-		margin: 0 auto;
-		width: 960px;
-		background: url("../img/alumina_960.png") top center / 960px 960px fixed no-repeat;
-	}
-	body {
-		width: 432px;
-		margin: 0;
-		padding: 1em 2em 10em;
-		font-size: 12px;
-		background: rgba(255,255,255,0.9);
-/*		box-shadow: 3px 0 3px 3px rgba(255,255,255,0.9);*/
-	}
-	h1 {
-		margin: 1em 24px;
-		color: #ca4949;
- 		font-family: "Times New Roman", serif;
-		font-size: 3em;
-	}
-	section {
-		width: 432px;
-		margin: 3em 0;
-		padding: 1em 2em;
-	}
-	h2 {
-		margin: 0 -0.5em;
-	}
-
-}
-
-@media screen and (max-width: 959px) {
-
-	body {
-		width: 640px;
-		padding: 3em 0 6em;
-		font-size: 16px;
-	}
-	h1 {
-		width: 640px;
-		height: 640px;
-		margin: 0 auto;
-		background: url("../img/alumina_640.png") center center / 640px 640px no-repeat;
-		font-size: 0;
-	}
-	section {
-		width: 480px;
-		margin: 3em auto;
+	section>section {
+		margin-bottom: 1em;
 		padding: 0 1em;
 	}
+	h1 {
+		margin: 1em 0;
+		color: var(--color-accent);
+ 		font-family: "Times New Roman", "Yu Mincho", YuMincho, serif;
+		font-size: 3em;
+	}
+	h1>a {
+		border: 0;
+	}
 	h2 {
-		margin: 1em -0.5em 1em;
-		border-bottom: 1px #ca4949 solid;
+		margin: 0 -1em calc(2em / 3);
+		color: var(--color-accent);
+		font-family: "BIZ UDMincho", "Yu Mincho", YuMincho, serif;
+		font-size: 1.5em;
+	}
+	h2::before {
+		content: "\02756";
+	}
+	h3 {
+		margin: 1em 0;
+		color: var(--color-accent);
+		font-size: 1em;
+		font-weight: normal;
+	}
+	h3::before {
+		content: "\0273f";
+		margin-left: -1.5em;
+		padding-right: 0.5em;
+		color: var(--color-accent);
+		font-family: "BIZ UDMincho", "Yu Mincho", YuMincho, serif;
+	}
+	a {
+		border-bottom: 1px dashed #ca4949;
+		color: var(--color-accent);
+		text-decoration: none;
+	}
+	a:hover {
+		border: 0;
+	}
+	p {
+		margin: 1em 0;
+	}
+	ul {
+		margin: 1em 0;
+		padding-left: 2em;
+	}
+	ul>li {
+		list-style: square;
+	}
+	li>ul {
+		margin: 0;
 	}
 
 }
